@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Meme Shop</string>
+    <string name="header">Mobile phone shops</string>
+    <string name="nameFirstField">Name</string>
+    <string name="nameLastField">Surname</string>
+    <string name="nameFatherField">Patronymic</string>
+    <string name="phoneField">Phone number</string>
+    <string name="orderAcceptButton">Lay out order</string>
+    <string name="paymentGroup">Total</string>
+    <string name="paymentCard">Card</string>
+    <string name="paymentCash">Cash $$$</string>
+</resources>
