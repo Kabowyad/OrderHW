@@ -1,6 +1,6 @@
 package com.example.orderhw.bucket
 
-import com.example.orderhw.Product
+import com.example.orderhw.product.Product
 
 class Bucket(
     val products: List<Product> = emptyList()

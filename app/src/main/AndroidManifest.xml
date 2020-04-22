@@ -16,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.BasketActivity" />
-        <activity android:name=".ui.OrderActivity" />
+        <activity android:name=".bucket.BucketActivity" />
+        <activity android:name=".order.OrderActivity" />
         <activity android:name=".ui.ProductInfoActivity" />
     </application>
 

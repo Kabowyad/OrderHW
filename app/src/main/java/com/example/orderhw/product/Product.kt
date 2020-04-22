@@ -1,4 +1,8 @@
-package com.example.orderhw
+package com.example.orderhw.product
+
+import com.example.orderhw.Presenter
+import com.example.orderhw.View
+import com.example.orderhw.format
 
 class Product(
     val name: String,
@@ -11,11 +15,4 @@ class Product(
     }
 
     val discountPrice: Double = price * (1 - salePercent / 100.0)
-}
-
-class ProductPresenter(
-    override val view: View,
-    val product: Product
-) : Presenter {
-    override fun print() = view.print(format(product.discountPrice))
 }

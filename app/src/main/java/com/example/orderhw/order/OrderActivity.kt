@@ -5,7 +5,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.widget.EditText
 import com.example.orderhw.MainActivity
-import com.example.orderhw.Product
+import com.example.orderhw.product.Product
 import com.example.orderhw.R
 import com.example.orderhw.bucket.Bucket
 import kotlinx.android.synthetic.main.activity_main.nameFatherField
