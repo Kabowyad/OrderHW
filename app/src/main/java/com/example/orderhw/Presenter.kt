@@ -1,10 +1,11 @@
 package com.example.orderhw
 
+import com.arellomobile.mvp.MvpPresenter
+import com.example.orderhw.order.OrderView
 import kotlin.math.round
 
-interface Presenter {
-    val view: View
-    fun print()
+abstract class Presenter : MvpPresenter<OrderView>() {
+    abstract fun print()
 }
 
 fun format(price: Double): String {
