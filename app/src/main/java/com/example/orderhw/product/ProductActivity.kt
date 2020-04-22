@@ -5,7 +5,7 @@ import com.example.orderhw.MainActivity
 import com.example.orderhw.R
 import kotlinx.android.synthetic.main.activity_product.*
 
-class ProductInfoActivity : MainActivity() {
+class ProductActivity : MainActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_product)

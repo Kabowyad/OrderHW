@@ -1,7 +1,7 @@
 package com.example.orderhw
 
-import com.arellomobile.mvp.MvpPresenter
 import com.example.orderhw.order.OrderView
+import moxy.MvpPresenter
 import kotlin.math.round
 
 abstract class Presenter : MvpPresenter<OrderView>() {

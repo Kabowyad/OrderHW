@@ -1,6 +1,6 @@
 package com.example.orderhw.bucket
 
-import com.arellomobile.mvp.MvpPresenter
+import moxy.MvpPresenter
 
 class BucketPresenter : MvpPresenter<BucketView>() {
     private val list = mutableListOf("Item 1", "Item 2", "Item 3")
