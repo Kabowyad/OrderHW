@@ -1,40 +1,29 @@
 <resources>
-<!--    <string name="app_name">Meme Shop</string>-->
-<!--    <string name="header">Mobile phone shops</string>-->
-<!--    <string name="nameFirstField">Name</string>-->
-<!--    <string name="nameLastField">Surname</string>-->
-<!--    <string name="nameFatherField">Patronymic</string>-->
-<!--    <string name="phoneField">Phone number</string>-->
-<!--    <string name="orderAcceptButton">Lay out order</string>-->
-<!--    <string name="paymentGroup">Total</string>-->
-<!--    <string name="paymentCard">Card</string>-->
-<!--    <string name="paymentCash">Cash $$$</string>-->
-
     <!-- Общие -->
-    <string name="app_name">МММ</string>
-    <string name="app_full_name">Мой маленький магазинчик</string>
+    <string name="app_name">Meme Shop</string>
+    <string name="app_full_name">Mobile phone shops</string>
     <string name="backward">ᐊ</string>
     <!-- Каталог -->
     <string name="headerCatalog">@string/app_full_name</string>
-    <string name="buttonBasket">Перейти в корзину</string>
+    <string name="buttonBasket">Go to cart</string>
     <!-- Информация о товаре -->
-    <string name="headerProduct">Подробности</string>
-    <string name="productName">Название</string>
-    <string name="productPrice">Цена</string>
-    <string name="productDiscount">Скидка</string>
-    <string name="productPriceWithDiscount">Цена со скидкой</string>
+    <string name="headerProduct">Info</string>
+    <string name="productName">product name</string>
+    <string name="productPrice">price</string>
+    <string name="productDiscount">discount</string>
+    <string name="productPriceWithDiscount">price with discount</string>
     <!-- Информация о корзине -->
-    <string name="headerBasket">Корзина</string>
-    <string name="buttonMakeOrder">Оформить заказ</string>
-    <string name="buttonDeleteItem">Удалить</string>
+    <string name="headerBasket">basket</string>
+    <string name="buttonMakeOrder">make order</string>
+    <string name="buttonDeleteItem">delete</string>
     <!-- Оформление заказа -->
-    <string name="headerOrder">Оформление заказа</string>
-    <string name="nameFirstField">Имя</string>
-    <string name="nameLastField">Фамилия</string>
-    <string name="nameFatherField">Отчество</string>
-    <string name="phoneField">Номер телефона</string>
-    <string name="hintPhoneNumber">Пример: 8(+7)9999999999</string>
-    <string name="orderAcceptButton">Принять заказ</string>
-    <string name="paymentCard">₿ Биткоины</string>
-    <string name="paymentCash">$ Кэш</string>
+    <string name="headerOrder">make order</string>
+    <string name="nameFirstField">name</string>
+    <string name="nameLastField">surname</string>
+    <string name="nameFatherField">patronic</string>
+    <string name="phoneField">phone number</string>
+    <string name="hintPhoneNumber">example: 8(+7)9026010520</string>
+    <string name="orderAcceptButton">accept order</string>
+    <string name="paymentCard">card $$$</string>
+    <string name="paymentCash">cash $$$</string>
 </resources>
