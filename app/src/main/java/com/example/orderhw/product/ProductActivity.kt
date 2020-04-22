@@ -12,10 +12,6 @@ class ProductInfoActivity : MainActivity() {
         setListeners()
     }
 
-    override fun print(msg: String) {
-        TODO("Not yet implemented")
-    }
-
     private fun setListeners() {
         buttonProductGoBack.setOnClickListener { finish() }
     }

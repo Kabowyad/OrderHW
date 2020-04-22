@@ -19,10 +19,6 @@ class CatalogActivity : MainActivity() {
         catalogRv.adapter = CatalogAdapter(list)
     }
 
-    override fun print(msg: String) {
-        TODO("Not yet implemented")
-    }
-
     private fun setListeners() {
         buttonToBasket.setOnClickListener {
             val intent = Intent(this, BucketActivity::class.java)

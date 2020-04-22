@@ -1,13 +1,10 @@
 package com.example.orderhw
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.example.orderhw.bucket.Bucket
-import com.example.orderhw.bucket.BucketPresenter
-import kotlinx.android.synthetic.main.activity_main.*
+import androidx.appcompat.app.AppCompatActivity
 
-abstract class MainActivity : AppCompatActivity(), View {
+abstract class MainActivity : AppCompatActivity() {
     val tag = this.javaClass.simpleName
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,9 +1,5 @@
 package com.example.orderhw.product
 
-import com.example.orderhw.Presenter
-import com.example.orderhw.View
-import com.example.orderhw.format
-
 class Product(
     val name: String,
     val price: Double,

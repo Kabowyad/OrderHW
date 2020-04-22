@@ -8,11 +8,6 @@ import com.example.orderhw.MainActivity
 import com.example.orderhw.product.Product
 import com.example.orderhw.R
 import com.example.orderhw.bucket.Bucket
-import kotlinx.android.synthetic.main.activity_main.nameFatherField
-import kotlinx.android.synthetic.main.activity_main.nameFirstField
-import kotlinx.android.synthetic.main.activity_main.nameLastField
-import kotlinx.android.synthetic.main.activity_main.phoneField
-import kotlinx.android.synthetic.main.activity_main.textViewOrderInfo
 import kotlinx.android.synthetic.main.activity_order.*
 
 class OrderActivity : MainActivity(),

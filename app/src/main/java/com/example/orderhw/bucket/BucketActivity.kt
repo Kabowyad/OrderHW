@@ -25,10 +25,6 @@ class BucketActivity : MainActivity(), BucketView {
         setListeners()
     }
 
-    override fun print(msg: String) {
-        TODO("Not yet implemented")
-    }
-
     private fun setListeners() {
         buttonBasketGoBack.setOnClickListener { finish() }
         buttonMakeOrder.setOnClickListener {
