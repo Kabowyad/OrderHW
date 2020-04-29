@@ -1,11 +1,11 @@
-package com.example.orderhw.bucket
+package com.example.orderhw.presentation
 
+import com.example.orderhw.domain.Product
 import moxy.MvpView
 import moxy.viewstate.strategy.AddToEndSingleStrategy
 import moxy.viewstate.strategy.StateStrategyType
 
 @StateStrategyType(AddToEndSingleStrategy::class)
-interface BucketView : MvpView {
-    fun setItems(list: List<String>)
-    fun removeItem(position: Int)
+interface CatalogView : MvpView {
+    fun setItems(products: List<Product>)
 }

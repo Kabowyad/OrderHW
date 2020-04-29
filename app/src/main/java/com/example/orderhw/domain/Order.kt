@@ -1,4 +1,4 @@
-package com.example.orderhw.order
+package com.example.orderhw.domain
 
 data class Order(
     var firstName: String = "",

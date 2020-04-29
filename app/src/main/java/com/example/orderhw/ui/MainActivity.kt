@@ -1,10 +1,11 @@
-package com.example.orderhw
+package com.example.orderhw.ui
 
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import moxy.MvpAppCompatActivity
 
-abstract class MainActivity : AppCompatActivity() {
+abstract class MainActivity : MvpAppCompatActivity() {
     val tag = this.javaClass.simpleName
 
     override fun onCreate(savedInstanceState: Bundle?) {

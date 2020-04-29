@@ -1,27 +1,19 @@
-package com.example.orderhw.order
+package com.example.orderhw.ui
 
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.EditText
-import com.example.orderhw.MainActivity
-import com.example.orderhw.product.Product
+import com.example.orderhw.domain.Product
 import com.example.orderhw.R
-import com.example.orderhw.bucket.Bucket
+import com.example.orderhw.domain.Bucket
+import com.example.orderhw.domain.Order
+import com.example.orderhw.presentation.OrderPresenter
+import com.example.orderhw.presentation.OrderView
 import kotlinx.android.synthetic.main.activity_order.*
 
-class OrderActivity : MainActivity(),
-    OrderView {
-    private val presenter = OrderPresenter(
-        bucket = Bucket(
-            listOf(
-                Product("IPhone", 123.5, 30),
-                Product("Samsung", 85.5, 20),
-                Product("Xiomi", 50.5, 10)
-            )
-        ),
-        order = Order()
-    )
+class OrderActivity : MainActivity(), OrderView {
+    private val presenter = OrderPresenter()
 
     override fun print(msg: String) {
         textViewOrderInfo.text = msg

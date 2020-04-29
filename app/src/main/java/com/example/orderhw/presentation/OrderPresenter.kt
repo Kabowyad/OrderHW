@@ -1,25 +1,27 @@
-package com.example.orderhw.order
+package com.example.orderhw.presentation
 
-import com.example.orderhw.Presenter
-import com.example.orderhw.bucket.Bucket
-import com.example.orderhw.format
+import com.example.orderhw.domain.Bucket
+import com.example.orderhw.domain.Order
+import com.example.orderhw.domain.Product
+import moxy.MvpPresenter
 
-class OrderPresenter(
-    private val bucket: Bucket,
-    private val order: Order
-) : Presenter() {
-    override fun print() {
-        var presentation = ""
-        bucket.products.forEach { p ->
-            presentation += "${p.name}: ${format(
-                p.price
-            )}/${p.salePercent}% = ${format(
-                p.discountPrice
-            )}\n"
-        }
-        presentation += format(
-            bucket.discountPrice
+class OrderPresenter : MvpPresenter<OrderView>() {
+    private val order = Order()
+    private val basket: Bucket = Bucket(
+        mutableListOf(
+            Product("BMW X3", 123.5, 30),
+            Product("AUDI A4", 85.5, 20),
+            Product("KIA RIO", 50.5, 10)
         )
+    )
+
+    fun print() {
+        var presentation = ""
+        basket.products.forEach { p ->
+            presentation +=
+                "${p.name}: ${format(p.price)}/${p.discount}% = ${format(p.discountPrice)}\n"
+        }
+        presentation += format(basket.getDiscountPrice())
         viewState.print(presentation)
     }
 

@@ -1,12 +1,12 @@
-package com.example.orderhw
+package com.example.orderhw.presentation
 
-import com.example.orderhw.order.OrderView
+import com.example.orderhw.domain.Product
 import moxy.MvpPresenter
 import kotlin.math.round
 
-abstract class Presenter : MvpPresenter<OrderView>() {
-    abstract fun print()
-}
+class ProductPresenter(
+    var product: Product
+) : MvpPresenter<ProductView>()
 
 fun format(price: Double): String {
     val roundedPrice = round(100.0 * price) / 100.0

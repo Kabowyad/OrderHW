@@ -1,7 +1,6 @@
-package com.example.orderhw.product
+package com.example.orderhw.ui
 
 import android.os.Bundle
-import com.example.orderhw.MainActivity
 import com.example.orderhw.R
 import kotlinx.android.synthetic.main.activity_product.*
 
@@ -14,5 +13,9 @@ class ProductActivity : MainActivity() {
 
     private fun setListeners() {
         buttonProductGoBack.setOnClickListener { finish() }
+    }
+
+    companion object {
+        val PRODUCT_TAG = "PRODUCT_TAG"
     }
 }
