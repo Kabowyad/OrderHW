@@ -19,22 +19,19 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/scrollView3"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonProductGoBack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/productHeader">
+        app:layout_constraintTop_toBottomOf="@+id/productHeader"
+        app:layout_constraintVertical_bias="0.75">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0">
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-93dp">
 
             <TextView
                 android:id="@+id/textView18"
@@ -79,7 +76,7 @@
                 android:layout_marginEnd="@dimen/productInfoMargin"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="some pony" />
+                tools:text="Video Gsme" />
 
             <TextView
                 android:id="@+id/textView23"
@@ -88,7 +85,7 @@
                 android:layout_marginEnd="@dimen/productInfoMargin"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView22"
-                tools:text="100500 $" />
+                tools:text="50 $" />
 
             <TextView
                 android:id="@+id/textView24"

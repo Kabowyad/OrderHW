@@ -8,9 +8,11 @@
         android:id="@+id/basketHeader"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="#120101"
         android:gravity="center"
         android:text="@string/headerBasket"
         android:textAllCaps="true"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -19,6 +21,7 @@
         android:id="@+id/basketRv"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="#E3DBDB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,6 +29,7 @@
 
     <Button
         android:id="@+id/buttonMakeOrder"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/buttonMakeOrder"
@@ -35,6 +39,7 @@
 
     <Button
         android:id="@+id/buttonBasketGoBack"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/backward"

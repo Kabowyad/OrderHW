@@ -13,6 +13,7 @@ import com.example.orderhw.presentation.format
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.product_item.*
 
+
 class BucketAdapter(
     private val onDelete: (string: String) -> Unit,
     private val openProductInfo: (product: Product) -> Unit
